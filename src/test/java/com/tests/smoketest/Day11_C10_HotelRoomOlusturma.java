@@ -83,7 +83,7 @@ public class Day11_C10_HotelRoomOlusturma {
         //Max Adult
          hotelRoomPage.maxAdultCount.sendKeys("2");
 
-         //Maz Children
+         //Max Children
         hotelRoomPage.maxChildrenCount.sendKeys("4");
 
         //approved
