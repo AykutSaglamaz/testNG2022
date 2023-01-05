@@ -59,6 +59,7 @@ public class ExcelUtil {
     //=============== en son row'daki numberi nasil alirsiniz? Index'ler 0'dan baslar.====================
     public int rowCount() {
         return workSheet.getLastRowNum() + 1; }// 1 ekleyerek gercek sayiyi getirir
+
     //==============row ve column number girilince , data alinir ==========
     public String getCellData(int rowNum, int colNum) {
         Cell cell;

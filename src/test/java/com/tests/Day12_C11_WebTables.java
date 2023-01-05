@@ -5,6 +5,7 @@ import com.pages.HotelRoomPage;
 import com.pages.LoginPage;
 import com.utilities.ConfigReader;
 import com.utilities.Driver;
+import com.utilities.ExcelUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -126,6 +127,7 @@ public class Day12_C11_WebTables {
     ////    test method: printData(int row, int column); Bu method veriline cell'i yazdirmali
     @Test
     public void printData(int row, int column){
+
         //ornek : printData(2, 3); 2. row ve 3 column yazdirmali
 
     }
