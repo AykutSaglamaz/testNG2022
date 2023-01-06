@@ -148,19 +148,10 @@ public class ReusableMethods {
         return element;
     }
 
-    /**
-     * Performs double click action on an element
-     *
-     * @param element
-     */
     public static void doubleClick(WebElement element) {
         new Actions(Driver.getDriver()).doubleClick(element).build().perform();
     }
 
-    /**
-     * @param element
-     * @param check
-     */
     public static void selectCheckBox(WebElement element, boolean check) {
         if (check) {
             if (!element.isSelected()) {
@@ -173,12 +164,6 @@ public class ReusableMethods {
         }
     }
 
-    /**
-     * Selects a random value from a dropdown list and returns the selected Web Element
-     *
-     * @param select
-     * @return
-     */
     public static WebElement selectRandomTextFromDropdown(Select select) {
         Random random = new Random();
         List<WebElement> weblist = select.getOptions();
