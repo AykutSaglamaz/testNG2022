@@ -31,7 +31,7 @@ public class Day09_C1_TestNGAnnotation {
         System.out.println("Afer method kullandik");
     }
 
-    @Test (priority = 2)
+    @Test (priority = 2, groups = "test-group-1")
     public void test6(){
         System.out.println("Test 6");
     }
@@ -48,7 +48,7 @@ public class Day09_C1_TestNGAnnotation {
         System.out.println("Test 3");
     }
 
-    @Test (priority = -3)
+    @Test (groups = "test-group-1", priority = -3)
     public void test4(){
         System.out.println("Test 4");
     }

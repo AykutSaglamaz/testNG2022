@@ -13,7 +13,7 @@ public class Day14_C17_DataProvider2 {
      getData method'unda 2D array donduren bir object olustur
      */
 
-    @DataProvider
+    @DataProvider (parallel = true)
     public Object [][] getData(){
 
         Object [][]  managerProfili = { {"manager",   "Manager1!"},{"manager5", "Manager5!"},{"manager12", "Manager12!"}};
@@ -41,7 +41,7 @@ public class Day14_C17_DataProvider2 {
 
     }
 
-    @Test(dataProvider = "getData" )
+    @Test(dataProvider = "getData")
     public void managerLoginTest(String KullaniciAdi, String sifre){
         setUp();
         loginPage.username.sendKeys(KullaniciAdi);

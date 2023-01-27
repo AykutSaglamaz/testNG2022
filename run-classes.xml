@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Arcane-Test-Suite">
+    <test name="class-set-1">
+     <classes>
+         <class name="com.tests.Day09_C1_TestNGAnnotation"></class>
+         <class name="com.excelautomation.Day12_C12_ReadExcel"></class>
+     </classes>
+    </test>
+
+    <test name="class-set-2">
+        <classes>
+            <class name="com.tests.Day10_C7_TestAdressLoginTest"></class>
+
+        </classes>
+    </test>
+</suite>

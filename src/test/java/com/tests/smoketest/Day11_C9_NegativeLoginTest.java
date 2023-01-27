@@ -21,9 +21,16 @@ public class Day11_C9_NegativeLoginTest {
     public void invalidPassword() throws InterruptedException {
         Driver.getDriver().get(ConfigReader.getProperty("app_url_login"));
 
-        loginPage.advancedLink.click();
-        Thread.sleep(3000);
-        loginPage.proceedLink.click();
+
+
+        try {
+            loginPage.advancedLink.click();
+            Thread.sleep(3000);
+            loginPage.proceedLink.click();
+
+        }catch (Exception e){
+
+        }
 
     // When Kullanıcı sadece yanlış password girer
 //        loginPage.username.sendKeys("manager");

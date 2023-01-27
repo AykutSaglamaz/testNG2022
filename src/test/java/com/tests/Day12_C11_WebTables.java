@@ -70,7 +70,7 @@ public class Day12_C11_WebTables {
     }
 
 //    test method: printRows() ve tum row'larin sayisi ile 4. row'daki elementi yazdir
-    @Test
+    @Test (groups = "test-group-1")
     public void printRows(){
 
         System.out.println("Print Rows");

@@ -12,7 +12,7 @@ public class Day10_C8_PositiveLoginTest {
 
     @Test
     public void positiveLoginTest(){
-        Driver.getDriver().get(ConfigReader.getProperty("app_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("app_url_login"));
 
         /*
         1-page object olustur ==> mainPage ve LoginPage
@@ -22,11 +22,15 @@ public class Day10_C8_PositiveLoginTest {
             - loginPage objectleri olustur
         */
         MainPage mainPage = new MainPage();
+    try {
+    mainPage.advancedLink.click();
+    mainPage.proceedLink.click();
 
-        mainPage.advancedLink.click();
-        mainPage.proceedLink.click();
+    mainPage.mainPageLoginLink.click();
+    }catch (Exception e){
 
-        mainPage.mainPageLoginLink.click();
+    }
+
 
         // bu nokta loginPage teyiz
        // loginPage object olustur
